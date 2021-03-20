@@ -25,7 +25,6 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
-
-plugins:
-  - search:
-    lang: en
+  plugins:
+    - search:
+      lang: en
