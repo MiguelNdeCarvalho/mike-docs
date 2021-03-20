@@ -1,0 +1,18 @@
+# Project information
+site_name: MiguelNdeCarvalho's Documentation
+site_url: https://docs.miguelndecarvalho.pt
+site_author: MiguelNdeCarvalho
+site_description: >-
+  Where the documentation of all of my projects is.
+repo_name: MiguelNdeCarvalho/mike-docs
+repo_url: https://github.com/MiguelNdeCarvalho/mike-docs
+edit_uri: ""
+copyright: Copyright &copy; 2021 MiguelNdeCarvalho
+
+# Material Theme
+theme:
+  name: material
+  search_index_only: true
+  palette:
+    scheme: slate
+    primary: teal
