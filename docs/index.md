@@ -1,17 +1,27 @@
-# Welcome to MkDocs
+---
+hide:
+  - navigation
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Welcome to Mike-Docs
 
-## Commands
+## Who am I?
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+First of all, I am `MiguelNdeCarvalho` a **Portuguese** tech enthusiast that really enjoys to
+mess with servers stuff.
 
-## Project layout
+## What will you find here?
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Here you will find all the **documentation** of all the **projects** that I have been developing
+on my github profile.
+
+## How can you contact me ?
+
+Check it [here][1].
+
+## How can I donate?
+
+Check it [here][2].
+
+[1]: /contact/
+[2]: /donate/
