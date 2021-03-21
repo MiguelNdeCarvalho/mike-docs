@@ -28,6 +28,8 @@ theme:
   plugins:
     - search:
       lang: en
+  icon:
+    repo: fontawesome/brands/github
 
 extra:
   social:
