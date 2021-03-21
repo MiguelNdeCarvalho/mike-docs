@@ -28,3 +28,14 @@ theme:
   plugins:
     - search:
       lang: en
+
+extra:
+  social:
+    - icon: fontawesome/solid/portrait
+      link: https://www.miguelndecarvalho.pt
+    - icon: fontawesome/brands/telegram
+      link: https://telegram.me/MiguelNdeCarvalho
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/miguelndecarvalho/
+    - icon: fontawesome/brands/github
+      link: https://twitter.com/squidfunk
