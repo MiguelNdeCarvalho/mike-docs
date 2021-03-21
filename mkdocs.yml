@@ -20,7 +20,7 @@ theme:
   font:
     text: Exo 2
     code: JetBrains Mono
-  feautures:
+  features:
     - navigation.instant
     - navigation.tabs
     - navigation.sections
