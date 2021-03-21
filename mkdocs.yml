@@ -49,3 +49,12 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Projects:
+    - speedtest-exporter: projects/speedtest-exporter.md
+  - Containers:
+    - arch-repo: containers/arch.md
+  - Contact: contact.md
+  - Donate: donate.md
