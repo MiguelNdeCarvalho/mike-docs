@@ -30,6 +30,7 @@ theme:
       lang: en
   icon:
     repo: fontawesome/brands/github
+    logo: fontawesome/solid/book
 
 extra:
   social:
