@@ -41,3 +41,7 @@ extra:
       link: https://www.linkedin.com/in/miguelndecarvalho/
     - icon: fontawesome/brands/github
       link: https://twitter.com/squidfunk
+
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
