@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Donate
 
 All the **projects** that I have been doing are **free** and **open-source**!
