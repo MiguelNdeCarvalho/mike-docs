@@ -16,7 +16,67 @@ It will measure your:
 - Ping
 - Jitter
 
+---
+
+## Setting up the Exporter
+
+### Container
+
+Setting up exporter via **Docker**:
+
+=== "Docker CLI"
+
+    ``` bash
+    docker run -d \
+      --name=speedtest-exporter \
+      -p 9798:9798 \
+      -e SPEEDTEST_PORT=<speedtest-port> #optional \
+      -e SPEEDTEST_SERVER=<speedtest-serverid> #optional \
+      --restart unless-stopped \
+      ghcr.io/miguelndecarvalho/speedtest-exporter
+    ```
+
+=== "Docker-Compose"
+
+    ``` yaml
+    version: "3.0"
+    services:
+      speedtest-exporter:
+        image: ghcr.io/miguelndecarvalho/speedtest-exporter
+        container_name: speedtest-exporter
+        environment:
+          - SPEEDTEST_PORT=<speedtest-port> #optional
+          - SPEEDTEST_SEVER=<server-id> #optional
+        ports:
+          - 9798:9798
+        restart: unless-stopped
+    ```
+
+#### Environments
+
+| Env                | Optional         | Description                                          | Default     | Example              |
+| ------------------ | ---------------- |-------------------------------------                 | -------     | -------------------- |
+| `SPEEDTEST_PORT`   | :material-check: | Sets the **Port** where exporter listens             | `9798`      | `9800`               |
+| `SPEEDTEST_SERVER` | :material-check: | Set the **Server** from where the tests will be made | Best Server | `1758` - Vodafone PT |
+
+???+ warning
+    When you set the **Env** `SPEEDTEST_PORT`, don't forget to publish the right **port**.
+
+    === "Docker CLI"
+    ``` bash
+    -p <SPEEDTEST_PORT>:<SPEEDTEST_PORT>
+    ```
+
+    === "Docker-Compose"
+    ``` yaml
+    ports:
+      - <SPEEDTEST_PORT>:<SPEEDTEST_PORT>
+    ```
+
+???+ tip
+    To get the **ServerID** to use in the **Env** `SPEEDTEST_SERVER` you can use this [Server list][4] to get the **IDs**.
 
 [1]: https://github.com/MiguelNdeCarvalho/speedtest-exporter
 [2]: https://prometheus.io/
 [3]: https://www.speedtest.net/apps/cli
+[4]: https://williamyaps.github.io/wlmjavascript/servercli.html
