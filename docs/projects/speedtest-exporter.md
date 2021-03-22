@@ -76,6 +76,34 @@ Setting up exporter via **Docker**:
 ???+ tip
     To get the **ServerID** to use in the **Env** `SPEEDTEST_SERVER` you can use this [Server list][4] to get the **IDs**.
 
+### Manual
+
+#### Reuquirements
+
+You will need to have:
+
+- `git`,
+- `python3`,
+- `pip3`,
+- [`speedtest`][3]
+
+#### Steps to install
+
+1. **Clone repo** - `git clone https://github.com/MiguelNdeCarvalho/speedtest-exporter.git`
+2. **Enter the repo folder** - `cd speedtest-exporter`
+3. **Install python modules** - `pip install -r requirements.tx`
+4. **Execute the exporter** - `python src/exporter.py`
+
+Then just access the page `http://localhost:9800/` and you will have the **exporter** page.
+
+???+ tip
+    If you wanna set the **Port** and the default **Server** just use [these](#environments) **Envs** to set it
+    
+    Example:
+    ```bash
+    export SPEEDTEST_PORT=9800; export SPEEDTEST_SERVER=1758; python src/exporter.py
+    ```
+
 [1]: https://github.com/MiguelNdeCarvalho/speedtest-exporter
 [2]: https://prometheus.io/
 [3]: https://www.speedtest.net/apps/cli
