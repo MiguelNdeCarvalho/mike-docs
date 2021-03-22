@@ -104,6 +104,29 @@ Then just access the page `http://localhost:9800/` and you will have the **expor
     export SPEEDTEST_PORT=9800; export SPEEDTEST_SERVER=1758; python src/exporter.py
     ```
 
+## Add exporter to Prometheus
+
+To add the Speedtest Exporter to your Prometheus just add this to your `prometheus.yml`:
+
+``` yaml
+- job_name: 'speedtest-exporter'
+  scrape_interval: <time-between-tests>
+  scrape_timeout: 1m
+  static_configs:
+    - targets: ['<ip-of-exporter-machine>:<port-where-exporter-is-listenning>']
+``` 
+
+Real example where the **tests** will be done **every hour**:
+
+``` yaml
+- job_name: 'speedtest-exporter'
+  scrape_interval: 1h
+  scrape_timeout: 1m
+  static_configs:
+    - targets: ['speedtest-exporter:9798']
+```
+
+
 [1]: https://github.com/MiguelNdeCarvalho/speedtest-exporter
 [2]: https://prometheus.io/
 [3]: https://www.speedtest.net/apps/cli
