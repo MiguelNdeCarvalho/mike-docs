@@ -1,1 +1,148 @@
 # Speedtest Exporter
+---
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/miguelndecarvalho/speedtest-exporter?color=%23009485&label=Latest%20Release&logo=github&style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/miguelndecarvalho/speedtest-exporter?color=%23009485&label=repo%20stars&logo=github&style=for-the-badge)
+![Docker Pulls](https://img.shields.io/docker/pulls/miguelndecarvalho/speedtest-exporter?color=%23009485&logo=docker&logoColor=%23ffffffff&style=for-the-badge)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/miguelndecarvalho/speedtest-exporter/Release%20Docker%20Image%20with%20new%20Tag?color=%23009485&logo=github&style=for-the-badge)
+
+
+[**Speedtest exporter**][1] is a [**Prometheus**][2] exporter written in **Python** using the official [Speedtest CLI][1] made by **Ookla**.
+
+It will measure your:
+
+- Download Speed
+- Upload Speed
+- Ping
+- Jitter
+
+---
+
+## Setting up the Exporter
+
+### Container
+
+Setting up exporter via **Docker**:
+
+=== "Docker CLI"
+
+    ``` bash
+    docker run -d \
+      --name=speedtest-exporter \
+      -p 9798:9798 \
+      -e SPEEDTEST_PORT=<speedtest-port> #optional \
+      -e SPEEDTEST_SERVER=<speedtest-serverid> #optional \
+      --restart unless-stopped \
+      ghcr.io/miguelndecarvalho/speedtest-exporter
+    ```
+
+=== "Docker-Compose"
+
+    ``` yaml
+    version: "3.0"
+    services:
+      speedtest-exporter:
+        image: ghcr.io/miguelndecarvalho/speedtest-exporter
+        container_name: speedtest-exporter
+        environment:
+          - SPEEDTEST_PORT=<speedtest-port> #optional
+          - SPEEDTEST_SEVER=<server-id> #optional
+        ports:
+          - 9798:9798
+        restart: unless-stopped
+    ```
+
+#### Environments
+
+| Env                | Optional         | Description                                          | Default     | Example              |
+| ------------------ | ---------------- |-------------------------------------                 | -------     | -------------------- |
+| `SPEEDTEST_PORT`   | :material-check: | Sets the **Port** where exporter listens             | `9798`      | `9800`               |
+| `SPEEDTEST_SERVER` | :material-check: | Set the **Server** from where the tests will be made | Best Server | `1758` - Vodafone PT |
+
+???+ warning
+    When you set the **Env** `SPEEDTEST_PORT`, don't forget to publish the right **port**.
+
+    === "Docker CLI"
+    ``` bash
+    -p <SPEEDTEST_PORT>:<SPEEDTEST_PORT>
+    ```
+
+    === "Docker-Compose"
+    ``` yaml
+    ports:
+      - <SPEEDTEST_PORT>:<SPEEDTEST_PORT>
+    ```
+
+???+ tip
+    To get the **ServerID** to use in the **Env** `SPEEDTEST_SERVER` you can use this [Server list][4] to get the **IDs**.
+
+### Manual
+
+#### Reuquirements
+
+You will need to have:
+
+- `git`,
+- `python3`,
+- `pip3`,
+- [`speedtest`][3]
+
+#### Steps to install
+
+1. **Clone repo** - `git clone https://github.com/MiguelNdeCarvalho/speedtest-exporter.git`
+2. **Enter the repo folder** - `cd speedtest-exporter`
+3. **Install python modules** - `pip install -r requirements.tx`
+4. **Execute the exporter** - `python src/exporter.py`
+
+Then just access the page `http://localhost:9800/` and you will have the **exporter** page.
+
+???+ tip
+    If you wanna set the **Port** and the default **Server** just use [these](#environments) **Envs** to set it
+    
+    Example:
+    ```bash
+    export SPEEDTEST_PORT=9800; export SPEEDTEST_SERVER=1758; python src/exporter.py
+    ```
+
+## Add exporter to Prometheus
+
+To add the Speedtest Exporter to your Prometheus just add this to your `prometheus.yml`:
+
+``` yaml
+- job_name: 'speedtest-exporter'
+  scrape_interval: <time-between-tests>
+  scrape_timeout: 1m
+  static_configs:
+    - targets: ['<ip-of-exporter-machine>:<port-where-exporter-is-listenning>']
+``` 
+
+Real example where the **tests** will be done **every hour**:
+
+``` yaml
+- job_name: 'speedtest-exporter'
+  scrape_interval: 1h
+  scrape_timeout: 1m
+  static_configs:
+    - targets: ['speedtest-exporter:9798']
+```
+
+## Grafana Dashboard
+
+The Grafana Dashboard can be found [here][5] or you can get the file [here][6]
+
+<figure>
+  <img src="/assets/images/projects/speedtest-exporter/grafana.png"/>
+  <figcaption>Fig 1. Grafana Dashboard</figcaption>
+</figure>
+
+## Changelog
+
+You can check the changelog [here][7]
+
+[1]: https://github.com/MiguelNdeCarvalho/speedtest-exporter
+[2]: https://prometheus.io/
+[3]: https://www.speedtest.net/apps/cli
+[4]: https://williamyaps.github.io/wlmjavascript/servercli.html
+[5]: https://grafana.com/grafana/dashboards/13665
+[6]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/blob/main/Dashboard/Speedtest%20Dashboard-1609529464845.json
+[7]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/releases
