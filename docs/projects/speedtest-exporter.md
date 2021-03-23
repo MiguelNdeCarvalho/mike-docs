@@ -126,8 +126,23 @@ Real example where the **tests** will be done **every hour**:
     - targets: ['speedtest-exporter:9798']
 ```
 
+## Grafana Dashboard
+
+The Grafana Dashboard can be found [here][5] or you can get the file [here][6]
+
+<figure>
+  <img src="/assets/images/projects/speedtest-exporter/grafana.png"/>
+  <figcaption>Fig 1. Grafana Dashboard</figcaption>
+</figure>
+
+## Changelog
+
+You can check the changelog [here][7]
 
 [1]: https://github.com/MiguelNdeCarvalho/speedtest-exporter
 [2]: https://prometheus.io/
 [3]: https://www.speedtest.net/apps/cli
 [4]: https://williamyaps.github.io/wlmjavascript/servercli.html
+[5]: https://grafana.com/grafana/dashboards/13665
+[6]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/blob/main/Dashboard/Speedtest%20Dashboard-1609529464845.json
+[7]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/releases
