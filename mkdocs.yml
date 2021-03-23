@@ -61,3 +61,7 @@ nav:
     - arch-repo: containers/arch.md
   - Contact: contact.md
   - Donate: donate.md
+
+google_analytics:
+  - G-RBMBTN8R5B
+  - auto
