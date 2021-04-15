@@ -78,7 +78,7 @@ Setting up exporter via **Docker**:
 
 ### Manual
 
-#### Reuquirements
+#### Requirements
 
 You will need to have:
 
