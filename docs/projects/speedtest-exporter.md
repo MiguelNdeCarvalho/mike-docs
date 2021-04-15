@@ -7,7 +7,7 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/miguelndecarvalho/speedtest-exporter/Release%20Docker%20Image%20with%20new%20Tag?color=%23009485&logo=github&style=for-the-badge)
 
 
-[**Speedtest exporter**][1] is a [**Prometheus**][2] exporter written in **Python** using the official [Speedtest CLI][1] made by **Ookla**.
+[**Speedtest exporter**][1] is a [**Prometheus**][2] exporter written in **Python** using the official [Speedtest CLI][3] made by **Ookla**.
 
 It will measure your:
 
