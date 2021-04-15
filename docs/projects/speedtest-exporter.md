@@ -1,10 +1,10 @@
 # Speedtest Exporter
 ---
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/miguelndecarvalho/speedtest-exporter?color=%23009485&label=Latest%20Release&logo=github&style=for-the-badge)
-![GitHub Repo stars](https://img.shields.io/github/stars/miguelndecarvalho/speedtest-exporter?color=%23009485&label=repo%20stars&logo=github&style=for-the-badge)
-![Docker Pulls](https://img.shields.io/docker/pulls/miguelndecarvalho/speedtest-exporter?color=%23009485&logo=docker&logoColor=%23ffffffff&style=for-the-badge)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/miguelndecarvalho/speedtest-exporter/Release%20Docker%20Image%20with%20new%20Tag?color=%23009485&logo=github&style=for-the-badge)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/miguelndecarvalho/speedtest-exporter?color=%23009485&label=Latest%20Release&logo=github&style=for-the-badge)][7]
+[![GitHub Repo stars](https://img.shields.io/github/stars/miguelndecarvalho/speedtest-exporter?color=%23009485&label=repo%20stars&logo=github&style=for-the-badge)][11]
+[![Docker Pulls](https://img.shields.io/docker/pulls/miguelndecarvalho/speedtest-exporter?color=%23009485&logo=docker&logoColor=%23ffffffff&style=for-the-badge)][9]
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/miguelndecarvalho/speedtest-exporter/Release%20Docker%20Image%20with%20new%20Tag?color=%23009485&logo=github&style=for-the-badge)][1]
 
 
 [**Speedtest exporter**][1] is a [**Prometheus**][2] exporter written in **Python** using the official [Speedtest CLI][3] made by **Ookla**.
@@ -159,3 +159,4 @@ You can check the changelog [here][7]
 [8]: https://github.com/users/miguelndecarvalho/packages/container/package/speedtest-exporter
 [9]: https://hub.docker.com/repository/docker/miguelndecarvalho/speedtest-exporter
 [10]: https://docs.docker.com/docker-hub/download-rate-limit/
+[11]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/stargazers
