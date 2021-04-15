@@ -64,10 +64,10 @@ Deploying:
 
 #### Environments
 
-| Env                | Optional         | Description                                          | Default     | Example              |
-| ------------------ | ---------------- |-------------------------------------                 | -------     | -------------------- |
-| `SPEEDTEST_PORT`   | :material-check: | Sets the **Port** where exporter listens             | `9798`      | `9800`               |
-| `SPEEDTEST_SERVER` | :material-check: | Set the **Server** from where the tests will be made | Best Server | `1758` - Vodafone PT |
+| Env                | Optional         | Description                                          | Default     | Example          |
+| ------------------ | ---------------- | ---------------------------------------------------- | ----------- | ---------------- |
+| `SPEEDTEST_PORT`   | :material-check: | Sets the **Port** where exporter listens             | `9798`      | `9800`           |
+| `SPEEDTEST_SERVER` | :material-check: | Set the **Server** from where the tests will be made | Best Server | `31309` - MEO PT |
 
 ???+ warning
     When you set the **Env** `SPEEDTEST_PORT`, don't forget to publish the right **port**.
@@ -152,7 +152,7 @@ You can check the changelog [here][7]
 [1]: https://github.com/MiguelNdeCarvalho/speedtest-exporter
 [2]: https://prometheus.io/
 [3]: https://www.speedtest.net/apps/cli
-[4]: https://williamyaps.github.io/wlmjavascript/servercli.html
+[4]: https://c.speedtest.net/speedtest-servers-static.php
 [5]: https://grafana.com/grafana/dashboards/13665
 [6]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/blob/main/Dashboard/Speedtest%20Dashboard-1609529464845.json
 [7]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/releases
