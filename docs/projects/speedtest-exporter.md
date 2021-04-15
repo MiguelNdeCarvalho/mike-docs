@@ -69,6 +69,9 @@ Deploying:
 | `SPEEDTEST_PORT`   | :material-check: | Sets the **Port** where exporter listens             | `9798`      | `9800`           |
 | `SPEEDTEST_SERVER` | :material-check: | Set the **Server** from where the tests will be made | Best Server | `31309` - MEO PT |
 
+???+ tip
+    To get the **ServerID** to use in the **Env** `SPEEDTEST_SERVER` you can use this [Server list][4] to get the **IDs**.
+
 ???+ warning
     When you set the **Env** `SPEEDTEST_PORT`, don't forget to publish the right **port**.
 
@@ -82,9 +85,11 @@ Deploying:
     ports:
       - <SPEEDTEST_PORT>:<SPEEDTEST_PORT>
     ```
+???+ danger
+    **We strongly discourage you from setting a specific server.**
+    If the **server** that you are using to make the **tests** stops working, your exporter won't be able to do the tests and
+    you won't get the **metrics**.
 
-???+ tip
-    To get the **ServerID** to use in the **Env** `SPEEDTEST_SERVER` you can use this [Server list][4] to get the **IDs**.
 
 ### Manual
 
