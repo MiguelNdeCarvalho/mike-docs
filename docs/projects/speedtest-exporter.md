@@ -20,9 +20,19 @@ It will measure your:
 
 ## Setting up the Exporter
 
-### Container
+### Docker
 
-Setting up exporter via **Docker**:
+Image location:
+
+| Container Registry    | Image                                          |
+| --------------------- | ---------------------------------------------- |
+| [Github Container][8] | `ghcr.io/miguelndecarvalho/speedtest-exporter` |
+| [Dockr Hub][9]        | `miguelndecarvalho/speedtest-exporter`         |
+
+???+ warning
+    I recommend you to use [Github Container][8] as you won't face any [pull limit][10].
+
+Deploying:
 
 === "Docker CLI"
 
@@ -146,3 +156,6 @@ You can check the changelog [here][7]
 [5]: https://grafana.com/grafana/dashboards/13665
 [6]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/blob/main/Dashboard/Speedtest%20Dashboard-1609529464845.json
 [7]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/releases
+[8]: https://github.com/users/miguelndecarvalho/packages/container/package/speedtest-exporter
+[9]: https://hub.docker.com/repository/docker/miguelndecarvalho/speedtest-exporter
+[10]: https://docs.docker.com/docker-hub/download-rate-limit/
