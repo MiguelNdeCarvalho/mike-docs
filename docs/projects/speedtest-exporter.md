@@ -43,7 +43,7 @@ Deploying:
       -e SPEEDTEST_PORT=<speedtest-port> #optional \
       -e SPEEDTEST_SERVER=<speedtest-serverid> #optional \
       --restart unless-stopped \
-      ghcr.io/miguelndecarvalho/speedtest-exporter
+      miguelndecarvalho/speedtest-exporter
     ```
 
 === "Docker-Compose"
