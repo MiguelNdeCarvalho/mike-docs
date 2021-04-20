@@ -150,6 +150,27 @@ The Grafana Dashboard can be found [here][5] or you can get the file [here][6]
   <figcaption>Fig 1. Grafana Dashboard</figcaption>
 </figure>
 
+## FAQ
+
+???+ question
+    **How can I set the time between the Scrapes?**
+
+    That is configured on your `prometheus.yml`. In this [example](#add-exporter-to-prometheus) the test will
+    be made every hour `scrape_interval: 1h`.
+
+???+ question
+    **Why isn't it working?**
+
+    If you set the tests to be made **every hour** (`scrape_interval: 1h`), **Prometheus** will only do the first
+    scrape after it is up for an hour.
+
+???+ question
+    **How can I test the exporter without Prometheus?**
+
+    You can just acess access it with your browser `http://ip:9798/` and you should be prompted with a welcome screen.
+    If you access `http://ip:9798/metrics` it should take around 30 seconds and then you will be prompted with all the
+    metrics.
+
 ## Changelog
 
 You can check the changelog [here][7]
