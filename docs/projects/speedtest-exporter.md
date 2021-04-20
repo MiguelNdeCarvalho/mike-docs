@@ -52,7 +52,7 @@ Deploying:
     version: "3.0"
     services:
       speedtest-exporter:
-        image: ghcr.io/miguelndecarvalho/speedtest-exporter
+        image: miguelndecarvalho/speedtest-exporter
         container_name: speedtest-exporter
         environment:
           - SPEEDTEST_PORT=<speedtest-port> #optional
@@ -61,6 +61,10 @@ Deploying:
           - 9798:9798
         restart: unless-stopped
     ```
+
+???+ tip
+    You can pull a specific version of the exporter. For example: `miguelndecarvalho/speedtest-exporter:v3.1`
+    Get the [changelog here][7]
 
 #### Environments
 
