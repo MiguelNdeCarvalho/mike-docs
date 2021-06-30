@@ -110,10 +110,10 @@ You will need to have:
 
 1. **Clone repo** - `git clone https://github.com/MiguelNdeCarvalho/speedtest-exporter.git`
 2. **Enter the repo folder** - `cd speedtest-exporter`
-3. **Install python modules** - `pip install -r requirements.tx`
-4. **Execute the exporter** - `python src/exporter.py`
+3. **Install python modules** - `pip install -r requirements.txt` (or `pip3` if outside a virtual env)
+4. **Execute the exporter** - `python src/exporter.py` (or `python3` if outside a virtual env)
 
-Then just access the page `http://localhost:9800/` and you will have the **exporter** page.
+Then just access the page `http://localhost:9798/` and you will have the **exporter** page.
 
 ???+ tip
     If you wanna set the **Port** and the default **Server** just use [these](#environments) **Envs** to set it
@@ -142,7 +142,7 @@ Real example where the **tests** will be done **every hour**:
   scrape_interval: 1h
   scrape_timeout: 1m
   static_configs:
-    - targets: ['speedtest-exporter:9798']
+    - targets: ['localhost:9798']
 ```
 
 ## Grafana Dashboard
