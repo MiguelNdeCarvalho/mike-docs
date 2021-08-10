@@ -56,7 +56,7 @@ Deploying:
         container_name: speedtest-exporter
         environment:
           - SPEEDTEST_PORT=<speedtest-port> #optional
-          - SPEEDTEST_SEVER=<server-id> #optional
+          - SPEEDTEST_SERVER=<server-id> #optional
         ports:
           - 9798:9798
         restart: unless-stopped
