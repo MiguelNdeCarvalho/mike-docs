@@ -110,7 +110,7 @@ You will need to have:
 
 1. **Clone repo** - `git clone https://github.com/MiguelNdeCarvalho/speedtest-exporter.git`
 2. **Enter the repo folder** - `cd speedtest-exporter`
-3. **Install python modules** - `pip install -r requirements.tx`
+3. **Install python modules** - `pip install -r src/requirements.txt`
 4. **Execute the exporter** - `python src/exporter.py`
 
 Then just access the page `http://localhost:9800/` and you will have the **exporter** page.
