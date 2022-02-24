@@ -62,6 +62,7 @@ nav:
   - Contact: contact.md
   - Donate: donate.md
 
-google_analytics:
-  - UA-80509244-5
-  - auto
+extra:
+  analytics:
+    provider: google
+    property: UA-80509244-5
