@@ -34,7 +34,7 @@ theme:
 
 extra:
   social:
-    - icon: fontawesome/solid/portrait
+    - icon: fontawesome/solid/image-portrait
       link: https://www.miguelndecarvalho.pt
     - icon: fontawesome/brands/telegram
       link: https://telegram.me/MiguelNdeCarvalho
