@@ -7,7 +7,7 @@ site_description: >-
 repo_name: MiguelNdeCarvalho
 repo_url: https://github.com/MiguelNdeCarvalho/
 edit_uri: ""
-copyright: Copyright &copy; 2021 MiguelNdeCarvalho
+copyright: Copyright &copy; 2022 MiguelNdeCarvalho
 
 # Material Theme
 theme:
@@ -34,7 +34,7 @@ theme:
 
 extra:
   social:
-    - icon: fontawesome/solid/portrait
+    - icon: fontawesome/solid/image-portrait
       link: https://www.miguelndecarvalho.pt
     - icon: fontawesome/brands/telegram
       link: https://telegram.me/MiguelNdeCarvalho
@@ -62,6 +62,7 @@ nav:
   - Contact: contact.md
   - Donate: donate.md
 
-google_analytics:
-  - UA-80509244-5
-  - auto
+extra:
+  analytics:
+    provider: google
+    property: UA-80509244-5
