@@ -61,8 +61,3 @@ nav:
     - arch-repo: containers/arch.md
   - Contact: contact.md
   - Donate: donate.md
-
-extra:
-  analytics:
-    provider: google
-    property: UA-80509244-5
