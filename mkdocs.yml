@@ -12,6 +12,7 @@ copyright: Copyright &copy; 2022 MiguelNdeCarvalho
 # Material Theme
 theme:
   name: material
+  custom_dir: overrides
   search_index_only: true
   palette:
     scheme: slate
