@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://docs.miguelndecarvalho.pt/</loc>
+         <lastmod>2022-05-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.miguelndecarvalho.pt/contact/</loc>
+         <lastmod>2022-05-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.miguelndecarvalho.pt/donate/</loc>
+         <lastmod>2022-05-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.miguelndecarvalho.pt/containers/arch/</loc>
+         <lastmod>2022-05-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.miguelndecarvalho.pt/projects/speedtest-exporter/</loc>
+         <lastmod>2022-05-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
