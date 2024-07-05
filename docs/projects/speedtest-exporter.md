@@ -184,7 +184,7 @@ You can check the changelog [here][7]
 [3]: https://www.speedtest.net/apps/cli
 [4]: https://c.speedtest.net/speedtest-servers-static.php
 [5]: https://grafana.com/grafana/dashboards/13665
-[6]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/blob/main/Dashboard/Speedtest%20Dashboard-1609529464845.json
+[6]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/blob/main/Dashboard/Speedtest-Exporter.json
 [7]: https://github.com/MiguelNdeCarvalho/speedtest-exporter/releases
 [8]: https://github.com/users/miguelndecarvalho/packages/container/package/speedtest-exporter
 [9]: https://hub.docker.com/repository/docker/miguelndecarvalho/speedtest-exporter
